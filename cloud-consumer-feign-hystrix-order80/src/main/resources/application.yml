@@ -1,0 +1,13 @@
+server:
+  port: 8005
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+# 支持hystrix
+feign:
+  hystrix:
+    enabled: true
